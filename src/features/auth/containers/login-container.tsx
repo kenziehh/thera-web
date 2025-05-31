@@ -29,7 +29,6 @@ export default function LoginContainer() {
 
     const onSubmit = async (data: SignInFormData) => {
         const { email, password } = data
-        console.log(email)
         try {
             const response = await signIn("credentials", {
                 redirect: false,
@@ -58,6 +57,7 @@ export default function LoginContainer() {
     const togglePasswordVisibility = () => {
         setShowPassword(!showPassword)
     }
+    
 
     return (
         <main className="relative min-h-screen flex justify-center items-center w-full">
