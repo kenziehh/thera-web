@@ -60,3 +60,38 @@ type Appointment = {
     created_at: string;
     updated_at: string;
 };
+
+type User = {
+    id: string;
+    email: string;
+    full_name: string;
+    role: string;
+    hospital: Hospital;
+    created_at: string;
+    updated_at: string;
+};
+
+type NotificationEvent = {
+    id: string;
+    title: string;
+    body: string;
+    type: string;
+    is_read: boolean;
+    created_at: string;
+};
+
+type Mitra = {
+    id: string;
+    from_hospital: Hospital & {
+        type: string;
+        status: string;
+    };
+    to_hospital: Hospital & {
+        type: string;
+        status: string;
+    };
+    partner_type: string;
+    status: string;
+    created_at: string;
+    updated_at: string;
+};
