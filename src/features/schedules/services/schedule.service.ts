@@ -26,7 +26,7 @@ export class ScheduleService {
 
     static async updateSchedule(scheduleId: number, start_time: string, end_time: string) {
         try {
-            const response = await api.put(`/doctor-schedules/${scheduleId}`, {
+            const response = await api.patch(`/doctor-schedules/${scheduleId}`, {
                 start_time,
                 end_time
             });
