@@ -64,9 +64,14 @@ const navSections: NavSection[] = [
         title: "MANAJEMEN TENAGA KESEHATAN",
         items: [
             {
-                title: "Optimize Working Hours",
-                icon: Gift,
-                href: "/dashboard/optimize",
+                title: "Doctor",
+                icon: UserIcon,
+                href: "/dashboard/doctor",
+            },
+            {
+                title: "Patient",
+                icon: UserIcon,
+                href: "/dashboard/patient",
             },
             {
                 title: "Notification",

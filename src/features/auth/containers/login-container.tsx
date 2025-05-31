@@ -60,7 +60,7 @@ export default function LoginContainer() {
     }
 
     return (
-        <main className="relative min-h-screen flex justify-center items-center">
+        <main className="relative min-h-screen flex justify-center items-center w-full">
             <Image src={BackgroundAuth || "/placeholder.svg"} alt="" className="absolute left-0 top-0 h-[100vh] -z-20" />
 
             <div className="py-14 px-10 w-[400px] bg-white rounded-[40px] shadow-lg">

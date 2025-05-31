@@ -71,6 +71,10 @@ type User = {
     updated_at: string;
 };
 
+type NotificationEventMetadata = {
+    doctor_id: string;
+};
+
 type NotificationEvent = {
     id: string;
     title: string;
@@ -78,6 +82,8 @@ type NotificationEvent = {
     type: string;
     is_read: boolean;
     created_at: string;
+    metadata: NotificationEventMetadata;
+    
 };
 
 type Mitra = {

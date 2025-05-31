@@ -4,7 +4,7 @@ import React from 'react'
 export default function ScheduleContainer({ schedules }: { schedules: Schedule[] }) {
 
     return (
-        <main className='container py-10 md:py-20'>
+        <main className='container py-10 md:py-20 w-full flex-1' >
             <section className='flex flex-col gap-4'>
                 <h1 className='font-bold text-3xl'>Doctor Schedules</h1>
                 <Table className='border rounded-xl'>
